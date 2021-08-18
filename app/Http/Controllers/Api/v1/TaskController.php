@@ -123,9 +123,9 @@ class TaskController extends Controller
             return response()->json("There is no any completed task yet!");
     }
 
-    public function done($task)
+    public function done(Request $req)
     {
-        $task = Task::find($task);
+        $task = Task::find($req->task);
 
 
         if(!$task)
