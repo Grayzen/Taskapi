@@ -4,7 +4,9 @@ Task API
 Endpoint and parameters;
 
 * POST - api/v1/create
+
   title = string
+
   type = enum("common_ops", "invoice_ops", "custom_ops")
   
   condition = string (task_id)
