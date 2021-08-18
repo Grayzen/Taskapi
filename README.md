@@ -34,8 +34,8 @@ Endpoint and parameters;
 
   - Listing completed tasks by order
 
-5. GET - api/v1/done/{task}
+5. GET - api/v1/done
 
-  - Completing tasks by adding task_id into endpoint
+  - task = string (task_id) For completing tasks by task_id
 
 
