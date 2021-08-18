@@ -1,0 +1,109 @@
+name: Endpoints
+description: ''
+endpoints:
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/create
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/addcondition
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/list
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '[{"id":"task_0","title":"Task 0","type":"common_ops","condition":null,"amount":null,"country":null,"done":0,"created_at":"2021-08-18T02:58:59.000000Z","updated_at":"2021-08-18T02:58:59.000000Z"},{"id":"task_1","title":"Task 1","type":"custom_ops","condition":null,"amount":null,"country":"TR","done":0,"created_at":"2021-08-18T02:59:12.000000Z","updated_at":"2021-08-18T02:59:12.000000Z"},{"id":"task_2","title":"Task 2","type":"invoice_ops","condition":null,"amount":{"currency":"\u20ac","quantity":"2400"},"country":null,"done":0,"created_at":"2021-08-18T03:07:16.000000Z","updated_at":"2021-08-18T03:07:16.000000Z"},{"id":"task_22","title":"Task 22","type":"custom_ops","condition":null,"amount":null,"country":"TR","done":0,"created_at":"2021-08-18T03:30:23.000000Z","updated_at":"2021-08-18T03:30:23.000000Z"},{"id":"task_3","title":"Task 3","type":"invoice_ops","condition":null,"amount":{"currency":"\u20ba","quantity":"2400"},"country":null,"done":0,"created_at":"2021-08-18T03:07:33.000000Z","updated_at":"2021-08-18T03:07:33.000000Z"},{"id":"task_4","title":"Task 4","type":"custom_ops","condition":null,"amount":null,"country":"TRasd","done":0,"created_at":"2021-08-18T03:09:05.000000Z","updated_at":"2021-08-18T03:09:05.000000Z"},{"id":"task_5","title":"Task 5","type":"invoice_ops","condition":null,"amount":{"currency":"\u20ac","quantity":"2400"},"country":null,"done":0,"created_at":"2021-08-18T03:10:18.000000Z","updated_at":"2021-08-18T03:10:18.000000Z"},{"id":"task_9","title":"Task 9","type":"custom_ops","condition":null,"amount":null,"country":"TR","done":0,"created_at":"2021-08-18T03:29:03.000000Z","updated_at":"2021-08-18T03:29:03.000000Z"}]'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/listorder
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    queryParameters: []
+    bodyParameters: []
+    responses:
+      -
+        status: 200
+        content: '"There is no any completed task yet!"'
+        headers:
+          cache-control: 'no-cache, private'
+          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '58'
+          access-control-allow-origin: '*'
+        description: null
+    responseFields: []
+  -
+    httpMethods:
+      - POST
+    uri: 'api/v1/done/{task}'
+    metadata:
+      title: ''
+      description: ''
+      authenticated: false
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      task:
+        name: task
+        description: ''
+        required: true
+        example: officia
+        type: string
+    queryParameters: []
+    bodyParameters: []
+    responses: []
+    responseFields: []
