@@ -3,7 +3,7 @@ Task API
 
 Endpoint and parameters;
 
-POST - api/v1/create
+* POST - api/v1/create
   title = string
   type = enum("common_ops", "invoice_ops", "custom_ops")
   
@@ -20,12 +20,12 @@ POST - api/v1/create
   country - TR, EN, FR, NL - these countries allowed for now
   
 
-POST - api/v1/addcondition
+* POST - api/v1/addcondition
 
-GET - api/v1/list
+* GET - api/v1/list
 
-GET - api/v1/listorder
+* GET - api/v1/listorder
 
-GET - api/v1/done/{task}
+* GET - api/v1/done/{task}
 
 
