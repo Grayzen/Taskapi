@@ -1,7 +1,7 @@
 # Taskapi
 Task API
 
-Endpoint and parameters;
+Endpoints and parameters;
 
 1. POST - api/v1/create
 
