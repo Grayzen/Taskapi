@@ -23,10 +23,19 @@ Endpoint and parameters;
   
 2. POST - api/v1/addcondition
 
+  - task = string (task_id)
+  - condition = string (task_id for condition)
+
 3. GET - api/v1/list
+
+  - Listing all tasks
 
 4. GET - api/v1/listorder
 
+  - Listing completed tasks by order
+
 5. GET - api/v1/done/{task}
+
+  - Completing tasks by adding task_id into endpoint
 
 
